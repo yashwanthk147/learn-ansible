@@ -4,6 +4,7 @@
   vars:
     URL: play.example.com
   tasks:
-    - name: Print Play level variables
+  
+    - name: Print Play Variable
       ansible.bultin.debug:
         msg: URL = {{ URL }}
