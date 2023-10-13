@@ -21,3 +21,7 @@ OUTPUT:
 
 52.87.176.96 | 172.31.83.101 | t3.medium | null
 
+dynamic inverntoy creation
+aws ec2 describe-instances | jq '.Reservations[].Instances[].PrivateIpAddress' >/tmp/inv
+
+ansible -i /tmp/inv APP -e ansible_user=centos -e ansible_password=DevOps321 -bm yum -a "name=nginx"
