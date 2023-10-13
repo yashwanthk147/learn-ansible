@@ -38,4 +38,6 @@ Ansible Playbook
 #playbook should have atleast one play
 #play must have info about the inventory resource group(hosts) based on that it should load tasks and roles.
 
+Ansible variables
 
+1. Play level variables - 
