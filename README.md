@@ -24,4 +24,18 @@ OUTPUT:
 dynamic inverntoy creation
 aws ec2 describe-instances | jq '.Reservations[].Instances[].PrivateIpAddress' >/tmp/inv
 
+Adhoc commands
 ansible -i /tmp/inv APP -e ansible_user=centos -e ansible_password=DevOps321 -bm yum -a "name=nginx"
+
+Ansible
+Key-value-Plain
+Key-Multiple Values -LIST
+KEY-KEY-VALUE- MAP
+
+Ansible Playbook
+#Playbook has multiple plays
+#playbook file itself is a LIST
+#playbook should have atleast one play
+#play must have info about the inventory resource group(hosts) based on that it should load tasks and roles.
+
+

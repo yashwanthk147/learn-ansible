@@ -1,0 +1,4 @@
+- name: Demo Play
+  hosts: all
+  tasks:
+    - name: Print Hello
