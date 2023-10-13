@@ -1,8 +1,9 @@
 - name: Play vaiables
   hosts: all
+  #connection: local
   vars:
     URL: play.example.com
   tasks:
     - name: Print Play level variables
       ansible.bultin.debug:
-        msg: URL = {{URL}}
+        msg: URL = {{ URL }}
