@@ -9,9 +9,20 @@
 
 - name: Demo Play
   hosts: localhost
+  #var_files works only on play level
   vars-files:
     - var.yml
   tasks:
     - name: Print Hello
       ansible.builtin.debug:
         msg: URL = {{ URL }}
+
+
+- name: Task Level Variables
+  hosts: all
+  tasks:
+    - name: Print Play Level Variables from files
+      vars:
+        URL: task.example.com
+      ansible.builtin.debug:
+        msg: URL = {{URL}}
