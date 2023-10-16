@@ -40,4 +40,11 @@ Ansible Playbook
 
 Ansible variables
 
-1. Play level variables - 
+precedence of variables
+1. cli - High priority
+2. task level
+3. variable from files
+4. play level
+5. inventory file
+
+Ansible pre-defined variables 

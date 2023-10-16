@@ -33,4 +33,4 @@
   tasks:
     - name: Print Play Level Variables from files
       ansible.builtin.debug:
-        msg: URL = {{URL}}
+        msg: "URL = {{URL}}, Hostname of the sever {{ ansible_hostname }}"
