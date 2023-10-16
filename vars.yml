@@ -22,7 +22,7 @@
   hosts: all
   tasks:
     - name: Print Play Level Variables from files
-      vars:
+      vars: #this vars are on;y for this task, you cannot access next task on same play
         URL: task.example.com
       ansible.builtin.debug:
         msg: URL = {{URL}}
