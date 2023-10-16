@@ -50,7 +50,7 @@
       ansible.builtin.set_fact:
         status: "{{ out.stdout }}"
 
-    - name: get status:
+    - name: get status
       ansible.builtin.debug:
         msg: "{{ status }}"
 
