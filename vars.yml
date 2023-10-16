@@ -34,3 +34,14 @@
     - name: Print Play Level Variables from files
       ansible.builtin.debug:
         msg: "URL = {{URL}}, Hostname of the sever {{ ansible_hostname }}"
+
+- name: Register a Variable
+  hosts: localhost
+  tasks: 
+    - name: Get uptime output
+      ansible.builtin.shell: uptime
+      register: out
+    
+    - name: Print output
+      ansible.builtin.debug:
+        msg: "{{ out  }}"
