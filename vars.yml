@@ -10,7 +10,7 @@
 - name: Demo Play
   hosts: localhost
   #var_files works only on play level
-  vars-files:
+  vars_files:
     - var.yml
   tasks:
     - name: Print Hello
