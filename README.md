@@ -48,3 +48,13 @@ precedence of variables
 5. inventory file
 
 Ansible pre-defined variables 
+
+#roles - packing the thing sin a better way(grouping the code in one place)
+precedence of variables from roles
+1. cli - High priority
+2. task level
+3. vars dir from roles
+4. variable from files
+5. play level
+6. inventory file
+7. default dir from roles
